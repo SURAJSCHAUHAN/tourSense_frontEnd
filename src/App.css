@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +31,374 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.NavbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+  width: 99%;
+  height: 80px;
+  border-radius: 13px;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+
+.navbar-logo{
+  color:#222;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav-menu{
+  display: flex;
+  justify-content: flex-end;
+  grid-gap:10px;
+  
+}
+.nav-links{
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+}
+.nav-links i{
+  padding-right: 10px;
+}
+.nav-links:hover{
+  background-color: #01959a;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.nav-links-signup{
+  padding: 0.5rem 1.5rem;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.nav-links-signup:hover{
+  background-color: #151516;
+  color: #fff;
+}
+.home-img{
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  height: 100vh;
+  object-fit: cover;
+}
+.about-img{
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  height: 90vh;
+  object-fit: cover;
+}
+.home-text{
+  position: absolute;
+  top: 55%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.about-text{
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-text h1{
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-text p{
+  font-size: 1.5rem;
+  color:#fff;
+  padding: 0.5rem 0 2rem 0;
+}
+.home-text button{
+  text-decoration: none;
+padding: 1rem 2rem;
+border-radius: 6px;
+font-size: 1.1rem;
+font-weight: bold;
+background-color: #fff;
+letter-spacing: 2px;
+color: #222;
+border-color: transparent;
+}
+
+@media screen and (max-width: 555px){ 
+  .home-text h1{
+    padding: 10px 20px;
+  }
+  .home-text p{
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+  .home-text button{
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+}
+
+.destination{
+  margin:4rem 6rem
+}
+.destination h1{
+  font-size: 3rem;
+}
+.first-des{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.first-des-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem; 
+}
+.des-text{
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+.des-text h2{
+  padding-bottom: 1rem;
+}
+.des-img{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index:-99;
+}
+.des-img img{
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.des-img img:nth-child(2){
+  position: absolute;
+  top: -10%;
+  right:0
+}
+@media screen and (max-width:850px) {
+  .destination{
+    margin:4rem 2rem
+  }
+  .first-des{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+  .first-des-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+  .des-text{
+    width: 100%;
+  }
+  .des-img{
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  .des-img img{
+    height:250px ;
+  }
+
+}
+
+.trip{
+  margin:4rem 6rem;
+  color: #2a2a2a;
+}
+.trip h1{
+  font-size: 3rem;
+}
+.trip-area{
+  margin-top:3rem;
+  display:flex;
+  justify-content: space-between;
+}
+.trip-card{
+  width: 32%;
+  text-align: start;
+  box-shadow: 0 5px 25px 2px rgba(0,0,0,0.11);
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+}
+.trip-img{
+  height: 200px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.trip-img img{
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  border-radius: 7px;
+}
+.trip-img:hover img{
+  transform: scale(1.2);
+}
+.text-area h4{
+font-size: 1.3rem;
+padding: 0.9rem 0 0.2rem 0;
+}
+
+@media screen and (max-width:850px) {
+  .trip{
+    margin:4rem 2rem
+  }
+  .trip-area{
+    flex-direction: column;
+  }
+  .trip-card{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+.footer{
+  padding: 4rem 6rem;
+  background-color: #000;
+  color: #fff;
+}
+.top {
+display: flex;
+align-items: center;
+text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.top i{
+  color: #fff;
+  font-size: 2rem;
+  margin-left:1rem ;
+}
+.top i:hover{
+  color:#01959a;
+}
+.bottom{
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bottom div{
+  display: flex;
+  flex-direction: column;
+}
+.bottom h4{
+  font-size: 1.3rem;
+  padding:1rem 0 0.8rem 0 ;
+}
+.footer-link{
+  text-decoration: none;
+  color: #fafafa;
+  padding-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width:850px) {
+  .footer{
+    padding: 4rem 2rem;
+  }
+  .bottom i{
+ margin:1rem 1rem 0 0;
+  }
+  .bottom div{
+    width:50%
+  }
+}
+
+.about-container{
+  margin: 4rem 6rem;
+  text-align: start;
+}
+.about-container h1{
+  padding-bottom: 1rem;
+}
+.about-container p{
+  padding-bottom:2rem ;
+}
+.team-link{
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.form-container{
+  margin:4rem 6rem;
+  color:#2a2a2a;
+}
+.form-container form{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.form-container input{
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #2a2a2a;
+}
+.form-container textarea{
+padding: 1rem;
+margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #2a2a2a;
+}
+
+.form-container button{
+  display: inline;
+}
+
+@media screen and (max-width:850px) {
+  .about-container{
+    margin:4rem 2rem;
+  }
+  .form-container{
+    margin: 4rem 2rem;
+  }
+  .form-container form{
+    padding-top: 2rem;
+    width: 90%;
+  }
 }
 
 @keyframes App-logo-spin {
