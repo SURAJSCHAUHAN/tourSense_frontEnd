@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tourSense_frontEnd/static/css/main.7348826a.css",
+    "main.js": "/tourSense_frontEnd/static/js/main.490f228a.js",
+    "static/js/787.f0cf88b7.chunk.js": "/tourSense_frontEnd/static/js/787.f0cf88b7.chunk.js",
+    "index.html": "/tourSense_frontEnd/index.html",
+    "main.7348826a.css.map": "/tourSense_frontEnd/static/css/main.7348826a.css.map",
+    "main.490f228a.js.map": "/tourSense_frontEnd/static/js/main.490f228a.js.map",
+    "787.f0cf88b7.chunk.js.map": "/tourSense_frontEnd/static/js/787.f0cf88b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7348826a.css",
+    "static/js/main.490f228a.js"
+  ]
+}
