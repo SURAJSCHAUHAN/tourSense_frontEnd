@@ -21,9 +21,7 @@ export default function About() {
 
             <h1>Our Team</h1>
             <div><Link to='https://www.linkedin.com/in/chauhan-suraj-singh/' className='team-link'>CHAUHAN SURAJ SINGH <i class="fa-solid fa-link"></i></Link></div>
-            <div><Link to='https://www.linkedin.com/in/udit-kumawat/' className='team-link'>UDIT KUMAWAT <i class="fa-solid fa-link"></i></Link></div>
-            <div><Link to='https://www.linkedin.com/in/siddharth-sharma-12279a220/' className='team-link'>SIDDHARTH SHARMA <i class="fa-solid fa-link"></i></Link></div>
-            <div><Link to='https://www.linkedin.com/in/lakshya-khandelwal-4a665b222/'className='team-link'>LAKSHYA KHANDELWAL <i class="fa-solid fa-link"></i></Link></div>
+
           </div>
       </div>
     </>
